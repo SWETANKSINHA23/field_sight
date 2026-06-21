@@ -28,7 +28,30 @@ This project is a comprehensive system designed for field staff to submit visit 
    ```bash
    pip install -r requirements.txt
    ```
-4. Create a `.env` file in the `backend` directory with your environment variables (e.g., `GEMINI_API_KEY`, database URL, etc.).
+4. Create a `.env` file inside the `backend` directory and add the following environment variables:
+
+```env
+# ============================================================
+# Field Visit Monitoring System - Environment Configuration
+# ============================================================
+
+# MongoDB
+MONGO_URI=mongodb://localhost:27017
+DB_NAME=field_visit_db
+
+# JWT
+JWT_SECRET_KEY=my_secret_key
+JWT_ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=1000
+
+# Gemini API
+GEMINI_API_KEY=YOUR_GEMINI_API_KEY
+
+# Upload Directories
+NOTES_UPLOAD_DIR=uploads/notes
+SITES_UPLOAD_DIR=uploads/sites
+AUDIO_UPLOAD_DIR=uploads/audio
+```
 
 ### Frontend Setup
 1. Open a terminal and navigate to the `frontend` folder:
