@@ -1,0 +1,94 @@
+.global-navbar {
+  background: #ffffff;
+  border-bottom: 0.81px solid var(--border);
+  height: var(--navbar-height);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 19.44px;
+  max-width: 100%;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 9.72px;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.brand-icon {
+  color: var(--accent);
+}
+
+.brand-name {
+  font-family: 'Google Sans', 'Inter', sans-serif;
+  font-size: 16.2px;
+  font-weight: 500;
+  letter-spacing: -0.009em;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 12.96px;
+}
+
+.nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6.48px;
+  font-family: 'Google Sans', 'Inter', sans-serif;
+  font-size: 11.34px;
+  font-weight: 500;
+  padding: 6.48px 16.2px;
+  border-radius: 3.24px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: var(--transition);
+  border: 0.81px solid transparent;
+  outline: none;
+}
+
+.nav-btn-text {
+  color: var(--accent);
+  background: transparent;
+}
+
+.nav-btn-text:hover {
+  background: #f4f8fe;
+}
+
+.nav-btn-outline {
+  color: var(--text-secondary);
+  background: transparent;
+  border-color: var(--border);
+}
+
+.nav-btn-outline:hover {
+  background: #f8f9fa;
+  color: var(--text-primary);
+}
+
+.nav-btn-solid {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.nav-btn-solid:hover {
+  background: #174ea6;
+  box-shadow: 0 0.81px 1.62px 0 rgba(60,64,67,0.3);
+}
